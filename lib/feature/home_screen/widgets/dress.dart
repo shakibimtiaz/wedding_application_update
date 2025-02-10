@@ -1,7 +1,5 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
-import 'package:flutter/widgets.dart';
+
 
 class Dresses extends StatelessWidget {
   final String imagePath;
@@ -10,12 +8,12 @@ class Dresses extends StatelessWidget {
   final String price;
 
   const Dresses({
-    Key? key,
+    super.key,
     required this.imagePath,
     required this.title,
     required this.subtitle,
     required this.price,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

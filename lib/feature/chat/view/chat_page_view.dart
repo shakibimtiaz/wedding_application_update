@@ -112,7 +112,7 @@ class ChatPageView extends StatelessWidget {
                     decoration: InputDecoration(
                       hintText: "Your message",
                       hintStyle:
-                          TextStyle(color: Colors.black.withOpacity(0.4)),
+                          TextStyle(color: Colors.black.withValues(alpha:  0.4)),
                       border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(15),
                       ),

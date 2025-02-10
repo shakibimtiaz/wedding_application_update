@@ -8,10 +8,10 @@ class ImageSlider extends StatefulWidget {
   const ImageSlider({super.key});
 
   @override
-  _ImageSliderState createState() => _ImageSliderState();
+  ImageSliderState createState() => ImageSliderState();
 }
 
-class _ImageSliderState extends State<ImageSlider> {
+class ImageSliderState extends State<ImageSlider> {
   late PageController _pageController;
   late Timer _timer;
   final HomeController controller = Get.find<HomeController>();

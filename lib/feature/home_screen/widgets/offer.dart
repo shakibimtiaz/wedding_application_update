@@ -28,7 +28,7 @@ class Offers extends StatelessWidget {
               ),
               child: ColorFiltered(
                 colorFilter: ColorFilter.mode(
-                  Colors.blue.withOpacity(0.1),
+                  Colors.blue.withValues(alpha: 0.1),
                   BlendMode.darken,
                 ),
                 child: const Column(

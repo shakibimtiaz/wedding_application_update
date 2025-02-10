@@ -1,5 +1,5 @@
+import 'package:flutter/foundation.dart';
 import 'package:get/get.dart';
-import 'package:flutter/material.dart';
 
 class AuthController extends GetxController {
   var phoneNumber = ''.obs;
@@ -12,7 +12,9 @@ class AuthController extends GetxController {
 
   void signIn() {
     // Add your sign-in logic here
-    print('Phone Number: ${phoneNumber.value}, Password: ${password.value}');
+    if (kDebugMode) {
+      print('Phone Number: ${phoneNumber.value}, Password: ${password.value}');
+    }
   }
 
   void signUp() {
