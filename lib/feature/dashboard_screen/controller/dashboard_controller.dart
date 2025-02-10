@@ -1,7 +1,6 @@
 import 'package:get/get.dart';
 import 'package:flutter/material.dart';
 
-
 import '../../auth/view/login_screen.dart';
 import '../../chat/view/chat_view.dart';
 import '../../home_screen/view/home_view.dart';
@@ -19,6 +18,10 @@ class DashboardController extends GetxController {
   ];
 
   void onItemTapped(int index) {
-    selectedIndex.value = index;
+    if (index == 4) {
+      Get.to(() => AuthScreen()); 
+    } else {
+      selectedIndex.value = index;
+    }
   }
 }
